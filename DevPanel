@@ -795,7 +795,7 @@ Converted["_Area1"].Name = "Area"
 Converted["_Area1"].Parent = Converted["_Area"]
 
 Converted["_TextLabel5"].Font = Enum.Font.GothamBold
-Converted["_TextLabel5"].Text = "yet another random hub menu"
+Converted["_TextLabel5"].Text = "Peekaboo!"
 Converted["_TextLabel5"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextLabel5"].TextSize = 14
 Converted["_TextLabel5"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -4119,12 +4119,12 @@ local function YZACXWN_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	
 	table.insert(module, {
 		Type = "Text",
-		Args = {"Welcome to YARHM! The open, free script hub."}
+		Args = {"The Stuff (Don't abuse, I have logs.)"}
 	})
 	table.insert(module, {
 		Type = "Button",
-		Args = {"Join our Discord", function(Self)
-			if setclipboard then setclipboard("https://discord.gg/2jbYxvDkxr") end
+		Args = {"Join the Discord", function(Self)
+			if setclipboard then setclipboard("https://discord.gg/murdermystery2") end
 			fu.notification('Discord link has been copied to clipboard!')
 		end,}
 	})
@@ -4871,7 +4871,7 @@ local function YZACXWN_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	
 	table.insert(module, {
 		Type = "Button",
-		Args = {"Hide YARHM", function(Self)
+		Args = {"Hide DevPanel", function(Self)
 			if uis.KeyboardEnabled then
 				ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
 					Scale = 0
@@ -4885,7 +4885,7 @@ local function YZACXWN_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 				hidden=true
 				fu.notification("Shake your device to bring back the menu.")
 			else
-				fu.notification("Can't hide YARHM!") -- how else are you gonna open???
+				fu.notification("Can't hide DevPanel!") -- how else are you gonna open???
 			end
 		end,}
 	}
